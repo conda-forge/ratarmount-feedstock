@@ -1,0 +1,10 @@
+--- setup.cfg	2024-02-23 21:39:38.563348800 +0100
++++ setup.cfg.new	2024-02-24 11:42:51.876353300 +0100
+@@ -39,7 +39,6 @@
+ 	indexed_zstd >= 1.2.2, < 2.0; platform_system!="Windows"
+ 	dataclasses; python_version < "3.7.0"
+ 	python-xz ~= 0.4.0
+-	rapidgzip ~= 0.10.0
+ 	rarfile ~= 4.0
+ 
+ [options.extras_require]
