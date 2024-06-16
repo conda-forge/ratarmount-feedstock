@@ -1,5 +1,5 @@
 {% set name = "ratarmount" %}
-{% set version = "0.14.2" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ratarmount-{{ version }}.tar.gz
-  sha256: 099876ed7e4499489161f795d0a3a7a4cac50df6bea83147af6a489c3f7450ef
+  sha256: dac94bb211f4ecefb83c8537745f6f5f665c5e36945724c561ce7d2cbd89e626
   folder: .
   patches:
     - remove-rapidgzip.patch
@@ -27,14 +27,15 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - ratarmountcore >=0.6.0,<0.7.dev0
+    - ratarmountcore >=0.7,<0.8
     - fusepy
     - indexed_bzip2 >=1.3.1,<2.0
     - indexed_gzip >=1.6.3,<2.0
     - indexed_zstd >=1.3.1,<2.0
     - dataclasses
-    - python-xz >=0.4.0,<0.5.dev0
-    - rarfile >=4.0,<5.dev0
+    - python-xz >=0.4.0,<0.5
+    - rarfile >=4.0,<5
+    - python-libarchive-c >=5.1,<6
 
 test:
   imports:
