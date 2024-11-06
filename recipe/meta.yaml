@@ -1,5 +1,5 @@
 {% set name = "ratarmount" %}
-{% set version = "0.15.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ratarmount-{{ version }}.tar.gz
-  sha256: d49023f6f03f6992c3bd90bb8f93c3d4e2fd9f823481a8381337348baf0e42cc
+  sha256: 7179b7d352cc12c884d5e2893bbd204f2edab1d67908a9cab712e29d6dbe889e
   folder: .
   patches:
     - remove-rapidgzip.patch
