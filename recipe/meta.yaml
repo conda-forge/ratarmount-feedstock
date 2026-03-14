@@ -1,5 +1,5 @@
 {% set name = "ratarmount" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: acca4e5803c75f50f94d4c75ead5f44aa4c4661c9e77d50eb25d1876e6f4dec9
+  sha256: 4f0675d4ac4562a413ae4d381829368a02c8f5b518a85254f1ff08dafbe7ab7f
   folder: .
 
 build:
